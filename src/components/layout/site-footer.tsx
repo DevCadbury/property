@@ -29,48 +29,47 @@ export function SiteFooter() {
   ];
 
   return (
-    <footer className="bg-[#2C1810] text-white">
+    <footer className="bg-[#5E312B] text-white">
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-16 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand Column */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-[#3D2314] rounded-lg flex items-center justify-center text-white font-bold text-xl">
-                P
-              </div>
-              <div>
-                <span className="text-xl font-bold">Pacific Edge</span>
-                <p className="text-xs text-gray-400">Realty Group</p>
-              </div>
+            {/* FOOTER LOGO — change "60px" to resize */}
+            <div className="mb-6">
+              <img
+                src="/harpreet-logo-footer.png"
+                alt="Harpreet Dhillon — Planet Group Realty Inc."
+                style={{ height: "250", width: "auto", objectFit: "contain" }}
+              />
             </div>
-            <p className="text-gray-300 text-sm mb-6 leading-relaxed">
-              Your trusted partner in finding the perfect home in Metro Vancouver and across British Columbia. 
-              With 15+ years of experience and a dedicated team, we make BC real estate simple.
+            <p className="text-white/65 text-sm mb-6 leading-relaxed">
+              Harpreet Dhillon — your trusted partner for real estate in Surrey, Langley, Abbotsford, and across the Fraser Valley.
+              15+ years of experience delivering results for BC families.
             </p>
 
             {/* Trust Badges */}
             <div className="flex flex-wrap gap-2 mb-6">
-              <span className="inline-flex items-center gap-1 px-3 py-1 bg-[#d4af37]/20 text-[#d4af37] text-xs rounded-full">
+              <span className="inline-flex items-center gap-1 px-3 py-1 bg-[#AC7E71]/20 text-[#C99C8E] text-xs rounded-full">
                 <CheckCircle className="w-3 h-3" /> Licensed in BC
               </span>
-              <span className="inline-flex items-center gap-1 px-3 py-1 bg-[#d4af37]/20 text-[#d4af37] text-xs rounded-full">
+              <span className="inline-flex items-center gap-1 px-3 py-1 bg-[#AC7E71]/20 text-[#C99C8E] text-xs rounded-full">
                 <CheckCircle className="w-3 h-3" /> 5-Star Reviews
               </span>
             </div>
 
             {/* Social Links */}
             <div className="flex gap-3">
-              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-sm hover:bg-[#3D2314] transition-colors">
+              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-sm hover:bg-[#7A463E] transition-colors">
                 <Facebook className="w-4 h-4" />
               </a>
-              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-sm hover:bg-[#3D2314] transition-colors">
+              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-sm hover:bg-[#7A463E] transition-colors">
                 <Instagram className="w-4 h-4" />
               </a>
-              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-sm hover:bg-[#3D2314] transition-colors">
+              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-sm hover:bg-[#7A463E] transition-colors">
                 <Linkedin className="w-4 h-4" />
               </a>
-              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-sm hover:bg-[#3D2314] transition-colors">
+              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-sm hover:bg-[#7A463E] transition-colors">
                 <Youtube className="w-4 h-4" />
               </a>
             </div>
@@ -110,7 +109,7 @@ export function SiteFooter() {
             <div className="space-y-4 mb-6">
               {BC_OFFICES.slice(0, 2).map((office) => (
                 <div key={office.city} className="flex items-start gap-3">
-                  <MapPin className="w-5 h-5 text-[#d4af37] mt-0.5" />
+                  <MapPin className="w-5 h-5 text-[#AC7E71] mt-0.5" />
                   <div>
                     <p className="font-medium text-white">{office.city}</p>
                     <p className="text-sm text-gray-400">{office.address}</p>
@@ -135,9 +134,9 @@ export function SiteFooter() {
                 <input 
                   type="email" 
                   placeholder="Your email" 
-                  className="flex-1 px-4 py-2 bg-white/10 rounded-l-lg text-white placeholder-gray-400 text-sm focus:outline-none focus:ring-2 focus:ring-[#D4AF37]"
+                  className="flex-1 px-4 py-2 bg-white/10 rounded-l-lg text-white placeholder-gray-400 text-sm focus:outline-none focus:ring-2 focus:ring-[#AC7E71]"
                 />
-                <button className="px-4 py-2 bg-[#d4af37] rounded-r-lg font-medium text-sm hover:bg-[#b8962e] transition-colors">
+                <button className="px-4 py-2 bg-[#AC7E71] rounded-r-lg font-medium text-sm hover:bg-[#9A6B5D] transition-colors">
                   Join
                 </button>
               </div>
@@ -156,8 +155,8 @@ export function SiteFooter() {
               <Link href="/accessibility" className="hover:text-white transition-colors">Accessibility</Link>
               <Link href="/contact" className="hover:text-white transition-colors">Contact Us</Link>
             </div>
-            <p className="text-sm text-gray-400">
-              {currentYear} Pacific Edge Realty Group. All rights reserved.
+            <p className="text-sm text-white/40">
+              © {currentYear} Harpreet Dhillon — Planet Group Realty Inc. All rights reserved.
             </p>
           </div>
         </div>

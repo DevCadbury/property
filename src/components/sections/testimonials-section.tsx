@@ -57,11 +57,11 @@ export function TestimonialsSection() {
   const next = () => setCurrent((c) => (c === TESTIMONIALS.length - 1 ? 0 : c + 1));
 
   return (
-    <section className="py-20 bg-[#FAF8F5]">
+    <section className="py-20 bg-[#F8F4F2]">
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-16">
         {/* Header */}
         <div className="text-center mb-12">
-          <p className="text-[#2C1810] font-semibold text-sm uppercase tracking-wider mb-2">Client Stories</p>
+          <p className="text-[#5E312B] font-semibold text-sm uppercase tracking-wider mb-2">Client Stories</p>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             What Our Clients Say
           </h2>
@@ -75,8 +75,8 @@ export function TestimonialsSection() {
           {SOCIAL_PROOF.map((stat, i) => (
             <div key={i} className="text-center">
               <div className="flex items-center justify-center mb-2">
-                <stat.icon className="w-5 h-5 text-[#2C1810] mr-2" />
-                <p className="text-3xl md:text-4xl font-bold text-[#2C1810]">{stat.metric}</p>
+                <stat.icon className="w-5 h-5 text-[#5E312B] mr-2" />
+                <p className="text-3xl md:text-4xl font-bold text-[#5E312B]">{stat.metric}</p>
               </div>
               <p className="text-gray-900 font-medium">{stat.label}</p>
               <p className="text-gray-500 text-sm">{stat.desc}</p>
@@ -94,11 +94,11 @@ export function TestimonialsSection() {
                 alt="Luxury home"
                 className="absolute inset-0 w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-[#2C1810]/75 flex items-center justify-center">
+              <div className="absolute inset-0 bg-[#5E312B]/75 flex items-center justify-center">
                 <div className="text-center">
                   <Quote className="w-16 h-16 text-white/20 mx-auto mb-4" />
                   <p className="text-white font-semibold text-lg">Trusted by</p>
-                  <p className="text-[#D4AF37] text-4xl font-bold">500+</p>
+                  <p className="text-[#AC7E71] text-4xl font-bold">500+</p>
                   <p className="text-white/80 text-sm">BC Families</p>
                 </div>
               </div>
@@ -112,14 +112,14 @@ export function TestimonialsSection() {
               transition={{ duration: 0.3 }}
               className="p-8 md:p-12 flex flex-col justify-center"
             >
-              <Quote className="w-10 h-10 text-[#d4af37] mb-4" />
+              <Quote className="w-10 h-10 text-[#AC7E71] mb-4" />
               
               <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-6 italic">
                 &quot;{TESTIMONIALS[current].quote}&quot;
               </p>
 
               <div className="flex items-center gap-4 mb-4">
-                <div className="w-12 h-12 rounded-full bg-[#2C1810] flex items-center justify-center text-white font-bold">
+                <div className="w-12 h-12 rounded-full bg-[#5E312B] flex items-center justify-center text-white font-bold">
                   {TESTIMONIALS[current].name.charAt(0)}
                 </div>
                 <div>
@@ -130,7 +130,7 @@ export function TestimonialsSection() {
 
               <div className="flex gap-1 mb-4">
                 {[...Array(TESTIMONIALS[current].rating)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 fill-[#d4af37] text-[#d4af37]" />
+                  <Star key={i} className="w-4 h-4 fill-[#AC7E71] text-[#AC7E71]" />
                 ))}
               </div>
 
@@ -138,7 +138,7 @@ export function TestimonialsSection() {
               <div className="flex items-center gap-4 mt-4">
                 <button
                   onClick={prev}
-                  className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-[#2C1810] hover:text-white transition-colors"
+                  className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-[#5E312B] hover:text-white transition-colors"
                 >
                   <ArrowLeft className="w-5 h-5" />
                 </button>
@@ -149,14 +149,14 @@ export function TestimonialsSection() {
                       onClick={() => setCurrent(i)}
                       className={cn(
                         "w-2 h-2 rounded-full transition-colors",
-                        current === i ? "bg-[#2C1810]" : "bg-gray-300"
+                        current === i ? "bg-[#5E312B]" : "bg-gray-300"
                       )}
                     />
                   ))}
                 </div>
                 <button
                   onClick={next}
-                  className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-[#2C1810] hover:text-white transition-colors"
+                  className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-[#5E312B] hover:text-white transition-colors"
                 >
                   <ArrowRight className="w-5 h-5" />
                 </button>
@@ -167,27 +167,27 @@ export function TestimonialsSection() {
 
         {/* Social Links */}
         <div className="flex justify-center gap-3 mb-8">
-          <a href="#" className="w-10 h-10 bg-[#2C1810] rounded-full flex items-center justify-center text-white hover:bg-[#3D2314] transition-colors">
+          <a href="#" className="w-10 h-10 bg-[#5E312B] rounded-full flex items-center justify-center text-white hover:bg-[#7A463E] transition-colors">
             <Facebook className="w-4 h-4" />
           </a>
-          <a href="#" className="w-10 h-10 bg-[#2C1810] rounded-full flex items-center justify-center text-white hover:bg-[#3D2314] transition-colors">
+          <a href="#" className="w-10 h-10 bg-[#5E312B] rounded-full flex items-center justify-center text-white hover:bg-[#7A463E] transition-colors">
             <Instagram className="w-4 h-4" />
           </a>
-          <a href="#" className="w-10 h-10 bg-[#2C1810] rounded-full flex items-center justify-center text-white hover:bg-[#3D2314] transition-colors">
+          <a href="#" className="w-10 h-10 bg-[#5E312B] rounded-full flex items-center justify-center text-white hover:bg-[#7A463E] transition-colors">
             <Linkedin className="w-4 h-4" />
           </a>
-          <a href="#" className="w-10 h-10 bg-[#2C1810] rounded-full flex items-center justify-center text-white hover:bg-[#3D2314] transition-colors">
+          <a href="#" className="w-10 h-10 bg-[#5E312B] rounded-full flex items-center justify-center text-white hover:bg-[#7A463E] transition-colors">
             <Youtube className="w-4 h-4" />
           </a>
         </div>
 
         {/* Links */}
         <div className="flex justify-center gap-4">
-          <a href="/testimonials" className="text-[#2C1810] font-medium hover:underline px-4 py-2 bg-white rounded-lg shadow-sm">
+          <a href="/testimonials" className="text-[#5E312B] font-medium hover:underline px-4 py-2 bg-white rounded-lg shadow-sm">
             Read all reviews
           </a>
           <span className="text-gray-300">|</span>
-          <a href="/contact" className="text-[#2C1810] font-medium hover:underline px-4 py-2 bg-white rounded-lg shadow-sm">
+          <a href="/contact" className="text-[#5E312B] font-medium hover:underline px-4 py-2 bg-white rounded-lg shadow-sm">
             Contact us
           </a>
         </div>

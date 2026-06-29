@@ -46,9 +46,9 @@ const cardVariant = {
 
 /* ─── Badge config ───────────────────────────────────────────────────────── */
 const BADGE_MAP: Record<string, { label: string; className: string }> = {
-  new:           { label: "New",        className: "bg-[#2D4F3C]    text-white" },
-  featured:      { label: "Featured",   className: "bg-[#1a365d]    text-white" },
-  exclusive:     { label: "Exclusive",  className: "bg-[#a67c52]    text-white" },
+  new:           { label: "New",        className: "bg-[#5E312B]    text-white" },
+  featured:      { label: "Featured",   className: "bg-[#5E312B]    text-white" },
+  exclusive:     { label: "Exclusive",  className: "bg-[#AC7E71]    text-white" },
   "open-house":  { label: "Open House", className: "bg-forest-light  text-foreground" },
   "price-reduced":{ label: "Price ↓",  className: "bg-copper-light   text-copper-foreground" },
   sold:          { label: "Sold",       className: "bg-gray-600 text-white" },

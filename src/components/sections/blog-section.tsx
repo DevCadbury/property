@@ -46,11 +46,11 @@ export function BlogSection() {
         {/* Header */}
         <div className="flex flex-col md:flex-row justify-between items-center mb-12">
           <div>
-            <p className="text-[#2C1810] font-semibold text-sm uppercase tracking-wider mb-2">Blog</p>
+            <p className="text-[#5E312B] font-semibold text-sm uppercase tracking-wider mb-2">Blog</p>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Latest BC Real Estate News</h2>
             <p className="text-gray-600 mt-2 max-w-xl">Stay informed about the BC real estate market with tips, guides, and insights from our expert team.</p>
           </div>
-          <Link href="/blog" className="hidden md:flex items-center gap-2 px-6 py-3 bg-[#2C1810] text-white rounded-xl font-semibold hover:bg-[#3D2314] transition-colors">
+          <Link href="/blog" className="hidden md:flex items-center gap-2 px-6 py-3 bg-[#5E312B] text-white rounded-xl font-semibold hover:bg-[#7A463E] transition-colors">
             View All Posts <ArrowRight className="w-5 h-5" />
           </Link>
         </div>
@@ -73,18 +73,18 @@ export function BlogSection() {
                     alt={post.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <span className="absolute top-3 left-3 px-3 py-1 bg-[#2C1810] text-white text-xs font-semibold rounded-full">
+                  <span className="absolute top-3 left-3 px-3 py-1 bg-[#5E312B] text-white text-xs font-semibold rounded-full">
                     {post.category}
                   </span>
                 </div>
                 <div className="flex items-center gap-4 text-sm text-gray-500 mb-2">
                   <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> {post.date}</span>
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 group-hover:text-[#2C1810] transition-colors line-clamp-2">
+                <h3 className="text-lg font-semibold text-gray-900 group-hover:text-[#5E312B] transition-colors line-clamp-2">
                   {post.title}
                 </h3>
                 <p className="text-gray-600 text-sm mt-2 line-clamp-2">{post.excerpt}</p>
-                <span className="inline-flex items-center gap-1 text-[#2C1810] font-medium text-sm mt-3">
+                <span className="inline-flex items-center gap-1 text-[#5E312B] font-medium text-sm mt-3">
                   Read More <ArrowRight className="w-4 h-4" />
                 </span>
               </Link>
@@ -93,14 +93,14 @@ export function BlogSection() {
         </div>
 
         {/* Categories */}
-        <div className="bg-[#FAF8F5] rounded-2xl p-8">
+        <div className="bg-[#F8F4F2] rounded-2xl p-8">
           <h3 className="text-lg font-semibold text-gray-900 mb-6 text-center">Browse by Category</h3>
           <div className="flex flex-wrap justify-center gap-3">
             {CATEGORIES.map((cat) => (
               <Link 
                 key={cat.name}
                 href={`/blog?category=${cat.name.toLowerCase()}`}
-                className="flex items-center gap-2 px-4 py-2 bg-white rounded-full text-sm text-gray-700 hover:bg-[#2C1810] hover:text-white transition-colors"
+                className="flex items-center gap-2 px-4 py-2 bg-white rounded-full text-sm text-gray-700 hover:bg-[#5E312B] hover:text-white transition-colors"
               >
                 {cat.name}
                 <span className="w-6 h-6 bg-gray-100 rounded-full flex items-center justify-center text-xs">{cat.count}</span>
@@ -110,7 +110,7 @@ export function BlogSection() {
         </div>
 
         <div className="text-center mt-8 md:hidden">
-          <Link href="/blog" className="inline-flex items-center gap-2 px-6 py-3 bg-[#2C1810] text-white rounded-xl font-semibold">
+          <Link href="/blog" className="inline-flex items-center gap-2 px-6 py-3 bg-[#5E312B] text-white rounded-xl font-semibold">
             View All Posts <ArrowRight className="w-5 h-5" />
           </Link>
         </div>

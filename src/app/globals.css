@@ -65,42 +65,42 @@
    Warm, coastal-inspired palette
 ────────────────────────────────────────────────────────────────────────────── */
 :root {
-  --background:            #FAF8F5;
-  --foreground:           #2C1810;
+  --background:            #F8F4F2;
+  --foreground:           #3E1F1B;
   --card:                 #FFFFFF;
-  --card-foreground:      #2C1810;
+  --card-foreground:      #3E1F1B;
   --popover:             #FFFFFF;
-  --popover-foreground:  #2C1810;
-  --primary:              #2C1810;
-  --primary-foreground:   #FAF8F5;
-  --secondary:           #F5EFE8;
-  --secondary-foreground:#3D2314;
-  --muted:               #F2EAE0;
-  --muted-foreground:    #7A5C4A;
-  --accent:              #D4AF37;
-  --accent-foreground:   #2C1810;
-  --copper:              #D4AF37;
-  --copper-light:        #F0E0B0;
-  --copper-foreground:   #2C1810;
-  --forest:              #2C1810;
-  --forest-light:        #3D2314;
-  --ocean:               #2C1810;
-  --ocean-light:         #3D2314;
+  --popover-foreground:  #3E1F1B;
+  --primary:              #5E312B;
+  --primary-foreground:   #F8F4F2;
+  --secondary:           #F2E7E3;
+  --secondary-foreground:#5E312B;
+  --muted:               #F0E6E2;
+  --muted-foreground:    #8A6A60;
+  --accent:              #AC7E71;
+  --accent-foreground:   #FFFFFF;
+  --copper:              #AC7E71;
+  --copper-light:        #E0CCC5;
+  --copper-foreground:   #3E1F1B;
+  --forest:              #5E312B;
+  --forest-light:        #7A463E;
+  --ocean:               #5E312B;
+  --ocean-light:         #7A463E;
   --destructive:         #B54646;
-  --border:              #E8D5C0;
-  --border-accent:       #D4AF37;
+  --border:              #E5D5CF;
+  --border-accent:       #AC7E71;
   --input:              #FFFFFF;
-  --ring:               #D4AF37;
+  --ring:               #AC7E71;
 
   /* Sidebar */
-  --sidebar:                    #F2EAE0;
-  --sidebar-foreground:         #2C1810;
-  --sidebar-primary:           #2C1810;
-  --sidebar-primary-foreground:#FAF8F5;
-  --sidebar-accent:            #F5EFE8;
-  --sidebar-accent-foreground: #2C1810;
-  --sidebar-border:            #E8D5C0;
-  --sidebar-ring:              #D4AF37;
+  --sidebar:                    #F0E6E2;
+  --sidebar-foreground:         #3E1F1B;
+  --sidebar-primary:           #5E312B;
+  --sidebar-primary-foreground:#F8F4F2;
+  --sidebar-accent:            #F2E7E3;
+  --sidebar-accent-foreground: #3E1F1B;
+  --sidebar-border:            #E5D5CF;
+  --sidebar-ring:              #AC7E71;
 
   --radius: 0.25rem;
   --header-height: 80px;

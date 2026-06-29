@@ -56,7 +56,7 @@ export function MortgageCalculator({ price, className }: MortgageCalculatorProps
             step="5"
             value={downPayment}
             onChange={(e) => setDownPayment(Number(e.target.value))}
-            className="w-full h-2 bg-muted rounded-lg appearance-none cursor-pointer accent-[#D4AF37]"
+            className="w-full h-2 bg-muted rounded-lg appearance-none cursor-pointer accent-[#AC7E71]"
           />
           <div className="flex justify-between text-xs text-muted-foreground mt-1">
             <span>5%</span>
@@ -78,7 +78,7 @@ export function MortgageCalculator({ price, className }: MortgageCalculatorProps
             step="0.25"
             value={interestRate}
             onChange={(e) => setInterestRate(Number(e.target.value))}
-            className="w-full h-2 bg-muted rounded-lg appearance-none cursor-pointer accent-[#D4AF37]"
+            className="w-full h-2 bg-muted rounded-lg appearance-none cursor-pointer accent-[#AC7E71]"
           />
           <div className="flex justify-between text-xs text-muted-foreground mt-1">
             <span>3%</span>
@@ -99,7 +99,7 @@ export function MortgageCalculator({ price, className }: MortgageCalculatorProps
             step="5"
             value={amortization}
             onChange={(e) => setAmortization(Number(e.target.value))}
-            className="w-full h-2 bg-muted rounded-lg appearance-none cursor-pointer accent-[#D4AF37]"
+            className="w-full h-2 bg-muted rounded-lg appearance-none cursor-pointer accent-[#AC7E71]"
           />
           <div className="flex justify-between text-xs text-muted-foreground mt-1">
             <span>10 yrs</span>
@@ -114,7 +114,7 @@ export function MortgageCalculator({ price, className }: MortgageCalculatorProps
             onClick={() => setPropertyTax(!propertyTax)}
             className={cn(
               "w-12 h-6 rounded-full transition-colors relative",
-              propertyTax ? "bg-[#D4AF37]" : "bg-muted"
+              propertyTax ? "bg-[#AC7E71]" : "bg-muted"
             )}
           >
             <span

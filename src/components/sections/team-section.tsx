@@ -20,11 +20,11 @@ const TEAM_FEATURES = [
 
 export function TeamSection() {
   return (
-    <section className="py-20 bg-[#FAF8F5]">
+    <section className="py-20 bg-[#F8F4F2]">
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-16">
         {/* Header */}
         <div className="text-center mb-12">
-          <p className="text-[#2C1810] font-semibold text-sm uppercase tracking-wider mb-2">Our Team</p>
+          <p className="text-[#5E312B] font-semibold text-sm uppercase tracking-wider mb-2">Our Team</p>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
             Meet the BC Experts
           </h2>
@@ -40,8 +40,8 @@ export function TeamSection() {
             alt="BC real estate team"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-[#2C1810]/70 flex items-center justify-center">
-            <p className="text-[#D4AF37] text-xl font-semibold tracking-widest uppercase">Your Dedicated BC Experts</p>
+          <div className="absolute inset-0 bg-[#5E312B]/70 flex items-center justify-center">
+            <p className="text-[#AC7E71] text-xl font-semibold tracking-widest uppercase">Your Dedicated BC Experts</p>
           </div>
         </div>
 
@@ -49,7 +49,7 @@ export function TeamSection() {
         <div className="flex flex-wrap justify-center gap-8 md:gap-16 mb-16">
           {TEAM_STATS.map((stat, i) => (
             <div key={i} className="flex items-center gap-3">
-              <div className="w-12 h-12 bg-[#2C1810] rounded-lg flex items-center justify-center">
+              <div className="w-12 h-12 bg-[#5E312B] rounded-lg flex items-center justify-center">
                 <stat.icon className="w-6 h-6 text-white" />
               </div>
               <div>
@@ -63,8 +63,8 @@ export function TeamSection() {
         {/* Team Features */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
           {TEAM_FEATURES.map((feature, i) => (
-            <div key={i} className="text-center p-4 bg-[#FAF8F5] rounded-xl">
-              <feature.icon className="w-6 h-6 text-[#2C1810] mx-auto mb-2" />
+            <div key={i} className="text-center p-4 bg-[#F8F4F2] rounded-xl">
+              <feature.icon className="w-6 h-6 text-[#5E312B] mx-auto mb-2" />
               <h3 className="font-semibold text-gray-900 text-sm">{feature.title}</h3>
               <p className="text-gray-500 text-xs">{feature.desc}</p>
             </div>
@@ -88,18 +88,18 @@ export function TeamSection() {
                   alt={agent.name}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#2C1810]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                <div className="absolute inset-0 bg-gradient-to-t from-[#5E312B]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                   <div className="w-full p-4">
                     <div className="flex gap-2">
                       <a
                         href={`tel:${agent.phone}`}
-                        className="flex-1 py-2 bg-white text-[#2C1810] rounded-lg text-center text-sm font-medium hover:bg-gray-100 flex items-center justify-center gap-1"
+                        className="flex-1 py-2 bg-white text-[#5E312B] rounded-lg text-center text-sm font-medium hover:bg-gray-100 flex items-center justify-center gap-1"
                       >
                         <Phone className="w-4 h-4" /> Call
                       </a>
                       <a
                         href={`mailto:${agent.email}`}
-                        className="flex-1 py-2 bg-white text-[#2C1810] rounded-lg text-center text-sm font-medium hover:bg-gray-100 flex items-center justify-center gap-1"
+                        className="flex-1 py-2 bg-white text-[#5E312B] rounded-lg text-center text-sm font-medium hover:bg-gray-100 flex items-center justify-center gap-1"
                       >
                         <Mail className="w-4 h-4" /> Email
                       </a>
@@ -107,18 +107,18 @@ export function TeamSection() {
                   </div>
                 </div>
                 <div className="absolute top-3 right-3 px-2 py-1 bg-white/90 rounded-full flex items-center gap-1">
-                  <Star className="w-3 h-3 fill-[#d4af37] text-[#d4af37]" />
+                  <Star className="w-3 h-3 fill-[#AC7E71] text-[#AC7E71]" />
                   <span className="text-xs font-semibold text-gray-900">{agent.rating}</span>
                 </div>
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 group-hover:text-[#2C1810] transition-colors">
+              <h3 className="text-lg font-semibold text-gray-900 group-hover:text-[#5E312B] transition-colors">
                 {agent.name}
               </h3>
-              <p className="text-[#D4AF37] font-medium text-sm">{agent.title}</p>
+              <p className="text-[#AC7E71] font-medium text-sm">{agent.title}</p>
               <p className="text-gray-500 text-sm mt-1">{agent.specialties?.slice(0, 2).join(", ")}</p>
               <Link
                 href={`/agents/${agent.slug}`}
-                className="inline-flex items-center gap-1 text-sm text-[#2C1810] mt-2 hover:gap-2 transition-all"
+                className="inline-flex items-center gap-1 text-sm text-[#5E312B] mt-2 hover:gap-2 transition-all"
               >
                 View Profile <ArrowRight className="w-4 h-4" />
               </Link>
@@ -130,7 +130,7 @@ export function TeamSection() {
         <div className="text-center mt-12">
           <Link
             href="/agents"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-[#2C1810] text-white rounded-xl font-semibold hover:bg-[#3D2314] transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-[#5E312B] text-white rounded-xl font-semibold hover:bg-[#7A463E] transition-colors"
           >
             View All Team Members
           </Link>

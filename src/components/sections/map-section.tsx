@@ -82,7 +82,7 @@ function MapContent() {
   const createCustomIcon = (price: number, isActive: boolean, isHovered: boolean) => {
     // eslint-disable-next-line @typescript-eslint/no-var-requires
     const L = require("leaflet");
-    const color = isActive || isHovered ? "#2D4F3C" : "#1f2937";
+    const color = isActive || isHovered ? "#5E312B" : "#1f2937";
     const priceK = (price / 1000).toFixed(0);
     return L.divIcon({
       className: "custom-marker",
@@ -109,7 +109,7 @@ function MapContent() {
         <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16">
           <div className="min-h-[400px] lg:min-h-[500px] bg-gray-100 rounded-xl flex items-center justify-center border border-gray-200">
             <div className="text-center">
-              <div className="animate-spin h-8 w-8 border-4 border-[#2D4F3C] border-t-transparent rounded-full mx-auto mb-4"></div>
+              <div className="animate-spin h-8 w-8 border-4 border-[#5E312B] border-t-transparent rounded-full mx-auto mb-4"></div>
               <p className="text-gray-500">Loading map...</p>
             </div>
           </div>
@@ -124,7 +124,7 @@ function MapContent() {
         
         {/* Section Header - PROPERLY ALIGNED */}
         <div className="mb-8">
-          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[#2D4F3C] mb-2">
+          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[#5E312B] mb-2">
             Explore by Map
           </p>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-gray-900 mb-3">
@@ -136,7 +136,7 @@ function MapContent() {
         </div>
 
         {/* Gold Divider */}
-        <div className="w-16 h-1 bg-[#A67C52] mb-8"></div>
+        <div className="w-16 h-1 bg-[#AC7E71] mb-8"></div>
 
         {/* Main Map Container with Frames */}
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-200">
@@ -183,7 +183,7 @@ function MapContent() {
                           />
                           <h3 className="font-semibold text-sm">{listing.title}</h3>
                           <p className="text-xs text-gray-500">{listing.neighborhood}</p>
-                          <p className="font-bold text-[#2D4F3C] mt-1">{formatPrice(listing.price)}</p>
+                          <p className="font-bold text-[#5E312B] mt-1">{formatPrice(listing.price)}</p>
                         </div>
                       </Popup>
                     </Marker>
@@ -213,7 +213,7 @@ function MapContent() {
               </div>
 
               {/* Frame Border Effect - Top */}
-              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#2D4F3C] via-[#A67C52] to-[#2D4F3C]"></div>
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#5E312B] via-[#AC7E71] to-[#5E312B]"></div>
               
               {/* Frame Border Effect - Bottom Left Label */}
               <div className="absolute bottom-4 left-4 z-[1000]">
@@ -239,7 +239,7 @@ function MapContent() {
                   {activePin && (
                     <button 
                       onClick={() => setActivePin(null)}
-                      className="text-xs text-[#2D4F3C] hover:underline font-medium"
+                      className="text-xs text-[#5E312B] hover:underline font-medium"
                     >
                       Clear
                     </button>
@@ -264,10 +264,10 @@ function MapContent() {
                         w-full flex items-center gap-3 p-3 rounded-xl text-left
                         transition-all duration-200 border-2
                         ${isActive 
-                          ? "bg-[#2D4F3C]/5 border-[#2D4F3C] shadow-md" 
+                          ? "bg-[#5E312B]/5 border-[#5E312B] shadow-md" 
                           : isHovered 
                             ? "bg-gray-50 border-gray-200" 
-                            : "bg-white border-gray-100 hover:border-[#A67C52]"
+                            : "bg-white border-gray-100 hover:border-[#AC7E71]"
                         }
                       `}
                     >
@@ -280,7 +280,7 @@ function MapContent() {
                           loading="lazy"
                         />
                         {listing.badge && (
-                          <span className="absolute top-1 left-1 text-[9px] font-bold px-1.5 py-0.5 bg-[#2D4F3C] text-white rounded">
+                          <span className="absolute top-1 left-1 text-[9px] font-bold px-1.5 py-0.5 bg-[#5E312B] text-white rounded">
                             {listing.badge}
                           </span>
                         )}
@@ -295,7 +295,7 @@ function MapContent() {
                           {listing.neighborhood}
                         </p>
                         <div className="flex items-center gap-2 mt-1.5">
-                          <p className="text-sm font-bold text-[#2D4F3C]">
+                          <p className="text-sm font-bold text-[#5E312B]">
                             {formatPrice(listing.price)}
                           </p>
                           <span className="text-[10px] text-gray-400">
@@ -312,7 +312,7 @@ function MapContent() {
               <div className="p-4 border-t border-gray-200 bg-gray-50">
                 <Link 
                   href="/listings"
-                  className="flex items-center justify-center gap-2 w-full py-3 bg-[#2D4F3C] text-white rounded-lg font-semibold text-sm hover:bg-[#234136] transition-colors shadow-md"
+                  className="flex items-center justify-center gap-2 w-full py-3 bg-[#5E312B] text-white rounded-lg font-semibold text-sm hover:bg-[#7A463E] transition-colors shadow-md"
                 >
                   View All Listings
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -326,7 +326,7 @@ function MapContent() {
 
         {/* Active Property Preview Card */}
         {activeListing && (
-          <div className="mt-6 bg-white rounded-xl shadow-2xl border-2 border-[#2D4F3C] p-6 animate-in fade-in slide-in-from-bottom-4 duration-300">
+          <div className="mt-6 bg-white rounded-xl shadow-2xl border-2 border-[#5E312B] p-6 animate-in fade-in slide-in-from-bottom-4 duration-300">
             <div className="flex flex-col md:flex-row gap-6">
               {/* Image Frame */}
               <div className="w-full md:w-64 h-40 shrink-0 rounded-xl overflow-hidden bg-gray-100 shadow-inner">
@@ -341,7 +341,7 @@ function MapContent() {
               <div className="flex-1">
                 <div className="flex flex-col md:flex-row md:items-start justify-between gap-4">
                   <div>
-                    <span className="text-xs font-semibold text-[#2D4F3C] uppercase tracking-wider">
+                    <span className="text-xs font-semibold text-[#5E312B] uppercase tracking-wider">
                       {activeListing.neighborhood}
                     </span>
                     <h4 className="text-xl font-bold text-gray-900 mt-1">
@@ -352,7 +352,7 @@ function MapContent() {
                     </p>
                   </div>
                   <div className="text-right">
-                    <p className="text-2xl font-bold text-[#2D4F3C]">
+                    <p className="text-2xl font-bold text-[#5E312B]">
                       {formatPrice(activeListing.price)}
                     </p>
                     <p className="text-sm text-gray-500">
@@ -381,7 +381,7 @@ function MapContent() {
                 <div className="flex flex-wrap items-center gap-3 mt-5">
                   <Link 
                     href={`/listings/${activeListing.slug}`}
-                    className="px-5 py-2.5 bg-[#2D4F3C] text-white rounded-lg font-medium text-sm hover:bg-[#234136] transition-colors shadow-md"
+                    className="px-5 py-2.5 bg-[#5E312B] text-white rounded-lg font-medium text-sm hover:bg-[#7A463E] transition-colors shadow-md"
                   >
                     View Details
                   </Link>
@@ -406,7 +406,7 @@ function MapContent() {
             <span>Available Property</span>
           </div>
           <div className="flex items-center gap-2">
-            <div className="h-3 w-3 rounded-full bg-[#2D4F3C]"></div>
+            <div className="h-3 w-3 rounded-full bg-[#5E312B]"></div>
             <span>Selected Property</span>
           </div>
           <div className="flex items-center gap-2">

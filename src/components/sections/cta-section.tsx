@@ -34,11 +34,11 @@ const BENEFITS = [
 export function CTASection() {
   return (
     <section
-      className="py-20 bg-[#2C1810] bg-cover bg-center relative overflow-hidden"
+      className="py-20 bg-[#5E312B] bg-cover bg-center relative overflow-hidden"
       style={{ backgroundImage: "url('https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1600&h=600&fit=crop&q=80')" }}
     >
       {/* Background Pattern */}
-      <div className="absolute inset-0 bg-[#2C1810]/85 opacity-[0.97]">
+      <div className="absolute inset-0 bg-[#5E312B]/85 opacity-[0.97]">
         <div 
           className="absolute inset-0"
           style={{
@@ -70,8 +70,8 @@ export function CTASection() {
               transition={{ delay: i * 0.1 }}
               className="text-center"
             >
-              <div className="w-16 h-16 border-2 border-[#d4af37] rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-[#d4af37] font-bold text-xl">{step.number}</span>
+              <div className="w-16 h-16 border-2 border-[#AC7E71] rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-[#AC7E71] font-bold text-xl">{step.number}</span>
               </div>
               <h3 className="text-xl font-semibold text-white mb-2">{step.title}</h3>
               <p className="text-gray-400 text-sm">{step.desc}</p>
@@ -86,7 +86,7 @@ export function CTASection() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {BENEFITS.map((benefit, i) => (
                 <div key={i} className="flex items-center gap-3 text-gray-300">
-                  <CheckCircle className="w-5 h-5 text-[#d4af37] flex-shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-[#AC7E71] flex-shrink-0" />
                   <span>{benefit}</span>
                 </div>
               ))}
@@ -98,13 +98,13 @@ export function CTASection() {
         <div className="flex flex-wrap justify-center gap-4">
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-[#d4af37] text-white rounded-xl font-semibold hover:bg-[#b8962e] transition-colors shadow-lg"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-[#AC7E71] text-white rounded-xl font-semibold hover:bg-[#9A6B5D] transition-colors shadow-lg"
           >
             <MessageCircle className="w-5 h-5" /> Get Started
           </Link>
           <Link
             href="/sell/valuation"
-            className="inline-flex items-center gap-2 px-8 py-4 border-2 border-white text-white rounded-xl font-semibold hover:bg-white hover:text-[#2C1810] transition-colors"
+            className="inline-flex items-center gap-2 px-8 py-4 border-2 border-white text-white rounded-xl font-semibold hover:bg-white hover:text-[#5E312B] transition-colors"
           >
             Get Home Value
           </Link>

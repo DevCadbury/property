@@ -96,7 +96,7 @@ export default function SellerGuidePage() {
   return (
     <>
       <SiteHeader />
-      <main className="min-h-screen bg-[#FAF8F5]">
+      <main className="min-h-screen bg-[#F8F4F2]">
 
         {/* ── HERO BANNER ── */}
         <div className="relative overflow-hidden min-h-[340px] flex items-end">
@@ -105,11 +105,11 @@ export default function SellerGuidePage() {
             alt="Luxury home for sale"
             className="absolute inset-0 w-full h-full object-cover object-center"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#2C1810]/95 via-[#2C1810]/80 to-[#2C1810]/40" />
-          <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#5E312B]/95 via-[#5E312B]/80 to-[#5E312B]/40" />
+          <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-[#AC7E71] to-transparent" />
           <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-10 py-16 w-full">
-            <p className="text-[#D4AF37] text-xs font-semibold tracking-widest uppercase mb-3 flex items-center gap-2">
-              <span className="w-6 h-[1px] bg-[#D4AF37]" /> Planet Group Realty
+            <p className="text-[#AC7E71] text-xs font-semibold tracking-widest uppercase mb-3 flex items-center gap-2">
+              <span className="w-6 h-[1px] bg-[#AC7E71]" /> Planet Group Realty
             </p>
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-3">Seller&apos;s Guide</h1>
             <p className="text-white/60 max-w-xl text-base">
@@ -130,16 +130,16 @@ export default function SellerGuidePage() {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="absolute -bottom-5 -right-5 bg-[#D4AF37] text-[#2C1810] px-6 py-4 rounded-2xl shadow-xl">
+                <div className="absolute -bottom-5 -right-5 bg-[#AC7E71] text-[#5E312B] px-6 py-4 rounded-2xl shadow-xl">
                   <p className="text-2xl font-bold">Top 1%</p>
-                  <p className="text-[#2C1810]/70 text-xs tracking-wide">BC Realtors</p>
+                  <p className="text-[#5E312B]/70 text-xs tracking-wide">BC Realtors</p>
                 </div>
               </div>
               <div className="order-1 lg:order-2">
-                <p className="text-[#D4AF37] text-xs font-semibold tracking-widest uppercase mb-4 flex items-center gap-2">
-                  <span className="w-5 h-[1px] bg-[#D4AF37]" /> Sell Smarter
+                <p className="text-[#AC7E71] text-xs font-semibold tracking-widest uppercase mb-4 flex items-center gap-2">
+                  <span className="w-5 h-[1px] bg-[#AC7E71]" /> Sell Smarter
                 </p>
-                <h2 className="font-display text-3xl md:text-4xl font-bold text-[#2C1810] mb-6 leading-tight">
+                <h2 className="font-display text-3xl md:text-4xl font-bold text-[#5E312B] mb-6 leading-tight">
                   Sell Smarter,<br />Sell Faster
                 </h2>
                 <p className="text-gray-600 text-lg mb-4 leading-relaxed">
@@ -150,7 +150,7 @@ export default function SellerGuidePage() {
                 </p>
                 <a
                   href="/contact"
-                  className="inline-flex items-center gap-2 px-7 py-3.5 bg-[#2C1810] text-white rounded-xl font-semibold text-sm hover:bg-[#3D2314] transition-colors shadow-lg"
+                  className="inline-flex items-center gap-2 px-7 py-3.5 bg-[#5E312B] text-white rounded-xl font-semibold text-sm hover:bg-[#7A463E] transition-colors shadow-lg"
                 >
                   Get a Free Consultation <ArrowRight className="w-4 h-4" />
                 </a>
@@ -160,30 +160,30 @@ export default function SellerGuidePage() {
         </section>
 
         {/* ── STEPS ── */}
-        <section className="py-20 bg-[#FAF8F5]">
+        <section className="py-20 bg-[#F8F4F2]">
           <div className="max-w-7xl mx-auto px-6 md:px-10">
             <div className="text-center mb-14">
-              <p className="text-[#D4AF37] text-xs font-semibold tracking-widest uppercase mb-3">The Process</p>
-              <h2 className="font-display text-3xl md:text-4xl font-bold text-[#2C1810]">The Selling Process</h2>
+              <p className="text-[#AC7E71] text-xs font-semibold tracking-widest uppercase mb-3">The Process</p>
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-[#5E312B]">The Selling Process</h2>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {STEPS.map((step, i) => (
                 <div
                   key={i}
-                  className="group bg-white rounded-2xl p-7 border border-[#E8D5C0] hover:border-[#D4AF37] hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                  className="group bg-white rounded-2xl p-7 border border-[#E5D5CF] hover:border-[#AC7E71] hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
                 >
                   <div className="flex items-start justify-between mb-5">
-                    <div className="w-12 h-12 bg-[#2C1810] rounded-xl flex items-center justify-center group-hover:bg-[#D4AF37] transition-colors">
+                    <div className="w-12 h-12 bg-[#5E312B] rounded-xl flex items-center justify-center group-hover:bg-[#AC7E71] transition-colors">
                       <step.icon className="w-5 h-5 text-white" />
                     </div>
-                    <span className="text-4xl font-bold text-[#2C1810]/10 group-hover:text-[#D4AF37]/20 font-display transition-colors">{step.step}</span>
+                    <span className="text-4xl font-bold text-[#5E312B]/10 group-hover:text-[#AC7E71]/20 font-display transition-colors">{step.step}</span>
                   </div>
-                  <h3 className="font-semibold text-[#2C1810] text-lg mb-2">{step.title}</h3>
+                  <h3 className="font-semibold text-[#5E312B] text-lg mb-2">{step.title}</h3>
                   <p className="text-gray-500 text-sm mb-4 leading-relaxed">{step.description}</p>
                   <ul className="space-y-1.5">
                     {step.details.map((detail, j) => (
                       <li key={j} className="flex items-center gap-2 text-xs text-gray-600">
-                        <CheckCircle className="w-3.5 h-3.5 text-[#D4AF37] shrink-0" />
+                        <CheckCircle className="w-3.5 h-3.5 text-[#AC7E71] shrink-0" />
                         {detail}
                       </li>
                     ))}
@@ -195,7 +195,7 @@ export default function SellerGuidePage() {
         </section>
 
         {/* ── FREE HOME EVALUATION ── */}
-        <section id="free-evaluation" className="py-20 bg-[#2C1810] relative overflow-hidden">
+        <section id="free-evaluation" className="py-20 bg-[#5E312B] relative overflow-hidden">
           <div className="absolute inset-0 opacity-10">
             <img
               src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=1600&h=700&fit=crop&q=60"
@@ -204,13 +204,13 @@ export default function SellerGuidePage() {
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent" />
+          <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#AC7E71] to-transparent" />
           <div className="relative z-10 max-w-6xl mx-auto px-6 md:px-10">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               {/* Left copy */}
               <div>
-                <p className="text-[#D4AF37] text-xs font-semibold tracking-widest uppercase mb-4 flex items-center gap-2">
-                  <span className="w-5 h-[1px] bg-[#D4AF37]" /> No Obligation
+                <p className="text-[#AC7E71] text-xs font-semibold tracking-widest uppercase mb-4 flex items-center gap-2">
+                  <span className="w-5 h-[1px] bg-[#AC7E71]" /> No Obligation
                 </p>
                 <h2 className="font-display text-3xl md:text-4xl font-bold text-white mb-5 leading-tight">
                   Free Home<br />Evaluation
@@ -221,8 +221,8 @@ export default function SellerGuidePage() {
                 <div className="space-y-4">
                   {["Comprehensive market analysis", "Recent comparable sales", "Personalized pricing strategy", "No strings attached"].map((item) => (
                     <div key={item} className="flex items-center gap-3">
-                      <div className="w-5 h-5 rounded-full bg-[#D4AF37]/20 border border-[#D4AF37]/40 flex items-center justify-center shrink-0">
-                        <CheckCircle className="w-3 h-3 text-[#D4AF37]" />
+                      <div className="w-5 h-5 rounded-full bg-[#AC7E71]/20 border border-[#AC7E71]/40 flex items-center justify-center shrink-0">
+                        <CheckCircle className="w-3 h-3 text-[#AC7E71]" />
                       </div>
                       <span className="text-white/70 text-sm">{item}</span>
                     </div>
@@ -234,7 +234,7 @@ export default function SellerGuidePage() {
               <div className="bg-white rounded-2xl p-8 shadow-2xl">
                 {!submitted ? (
                   <>
-                    <h3 className="font-display text-xl font-bold text-[#2C1810] mb-1">Get Your Free Report</h3>
+                    <h3 className="font-display text-xl font-bold text-[#5E312B] mb-1">Get Your Free Report</h3>
                     <p className="text-gray-400 text-sm mb-6">We&apos;ll respond within 24 hours.</p>
                     <form onSubmit={handleSubmit} noValidate className="space-y-4">
                       {[
@@ -245,14 +245,14 @@ export default function SellerGuidePage() {
                       ].map(({ field, label, type, placeholder }) => (
                         <div key={field}>
                           <label htmlFor={field} className="block text-xs font-semibold text-gray-700 uppercase tracking-wider mb-1.5">
-                            {label} <span className="text-[#D4AF37]">*</span>
+                            {label} <span className="text-[#AC7E71]">*</span>
                           </label>
                           <input
                             id={field}
                             type={type}
                             value={formData[field]}
                             onChange={(e) => handleFieldChange(field, e.target.value)}
-                            className="w-full px-4 py-3 rounded-xl border border-[#E8D5C0] bg-[#FAF8F5] text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-[#D4AF37] focus:border-transparent transition-all"
+                            className="w-full px-4 py-3 rounded-xl border border-[#E5D5CF] bg-[#F8F4F2] text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-[#AC7E71] focus:border-transparent transition-all"
                             placeholder={placeholder}
                           />
                           {formErrors[field] && (
@@ -262,7 +262,7 @@ export default function SellerGuidePage() {
                       ))}
                       <button
                         type="submit"
-                        className="w-full py-4 bg-[#D4AF37] text-[#2C1810] rounded-xl font-bold text-sm tracking-wide hover:bg-[#C9A227] transition-colors shadow-lg mt-2"
+                        className="w-full py-4 bg-[#AC7E71] text-[#5E312B] rounded-xl font-bold text-sm tracking-wide hover:bg-[#9A6B5D] transition-colors shadow-lg mt-2"
                       >
                         GET MY FREE EVALUATION
                       </button>
@@ -270,10 +270,10 @@ export default function SellerGuidePage() {
                   </>
                 ) : (
                   <div className="text-center py-8">
-                    <div className="w-16 h-16 bg-[#D4AF37] rounded-full flex items-center justify-center mx-auto mb-5">
-                      <CheckCircle className="w-8 h-8 text-[#2C1810]" />
+                    <div className="w-16 h-16 bg-[#AC7E71] rounded-full flex items-center justify-center mx-auto mb-5">
+                      <CheckCircle className="w-8 h-8 text-[#5E312B]" />
                     </div>
-                    <h3 className="font-display text-2xl font-bold text-[#2C1810] mb-2">Thank You!</h3>
+                    <h3 className="font-display text-2xl font-bold text-[#5E312B] mb-2">Thank You!</h3>
                     <p className="text-gray-500 text-sm leading-relaxed">
                       We&apos;ll be in touch shortly with your free home evaluation. Our team typically responds within 24 hours.
                     </p>
@@ -289,13 +289,13 @@ export default function SellerGuidePage() {
           <div className="max-w-7xl mx-auto px-6 md:px-10">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div>
-                <p className="text-[#D4AF37] text-xs font-semibold tracking-widest uppercase mb-4">Before You List</p>
-                <h2 className="font-display text-3xl md:text-4xl font-bold text-[#2C1810] mb-6">Prepare Your Home for Success</h2>
+                <p className="text-[#AC7E71] text-xs font-semibold tracking-widest uppercase mb-4">Before You List</p>
+                <h2 className="font-display text-3xl md:text-4xl font-bold text-[#5E312B] mb-6">Prepare Your Home for Success</h2>
                 <p className="text-gray-500 mb-8">These simple preparations can significantly impact buyer interest and offer prices.</p>
                 <div className="grid grid-cols-2 gap-3">
                   {TIPS.map((tip, i) => (
-                    <div key={i} className="flex items-start gap-2.5 p-3.5 bg-[#FAF8F5] rounded-xl border border-[#E8D5C0]">
-                      <CheckCircle className="w-4 h-4 text-[#D4AF37] shrink-0 mt-0.5" />
+                    <div key={i} className="flex items-start gap-2.5 p-3.5 bg-[#F8F4F2] rounded-xl border border-[#E5D5CF]">
+                      <CheckCircle className="w-4 h-4 text-[#AC7E71] shrink-0 mt-0.5" />
                       <span className="text-sm text-gray-700">{tip}</span>
                     </div>
                   ))}
@@ -315,20 +315,20 @@ export default function SellerGuidePage() {
         </section>
 
         {/* ── COSTS ── */}
-        <section className="py-20 bg-[#FAF8F5]">
+        <section className="py-20 bg-[#F8F4F2]">
           <div className="max-w-7xl mx-auto px-6 md:px-10">
             <div className="text-center mb-12">
-              <p className="text-[#D4AF37] text-xs font-semibold tracking-widest uppercase mb-3">No Surprises</p>
-              <h2 className="font-display text-3xl md:text-4xl font-bold text-[#2C1810]">Understanding Selling Costs</h2>
+              <p className="text-[#AC7E71] text-xs font-semibold tracking-widest uppercase mb-3">No Surprises</p>
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-[#5E312B]">Understanding Selling Costs</h2>
             </div>
             <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
               {COSTS.map((item, i) => (
-                <div key={i} className="bg-white rounded-2xl p-7 border border-[#E8D5C0] text-center hover:border-[#D4AF37] hover:shadow-lg transition-all">
-                  <div className="w-10 h-10 bg-[#2C1810] rounded-xl flex items-center justify-center mx-auto mb-4">
-                    <DollarSign className="w-5 h-5 text-[#D4AF37]" />
+                <div key={i} className="bg-white rounded-2xl p-7 border border-[#E5D5CF] text-center hover:border-[#AC7E71] hover:shadow-lg transition-all">
+                  <div className="w-10 h-10 bg-[#5E312B] rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <DollarSign className="w-5 h-5 text-[#AC7E71]" />
                   </div>
-                  <h3 className="font-semibold text-[#2C1810] mb-2">{item.title}</h3>
-                  <p className="text-[#D4AF37] font-bold text-xl mb-1">{item.amount}</p>
+                  <h3 className="font-semibold text-[#5E312B] mb-2">{item.title}</h3>
+                  <p className="text-[#AC7E71] font-bold text-xl mb-1">{item.amount}</p>
                   <p className="text-gray-400 text-xs">{item.note}</p>
                 </div>
               ))}
@@ -344,15 +344,15 @@ export default function SellerGuidePage() {
             aria-hidden="true"
             className="w-full h-64 object-cover"
           />
-          <div className="absolute inset-0 bg-[#2C1810]/90 flex items-center justify-center">
+          <div className="absolute inset-0 bg-[#5E312B]/90 flex items-center justify-center">
             <div className="text-center px-6">
               <h2 className="font-display text-3xl md:text-4xl font-bold text-white mb-4">Ready to Sell Your Home?</h2>
               <p className="text-white/60 mb-7 max-w-xl mx-auto">Request a free, no-obligation market valuation. We&apos;ll visit your home and provide a detailed report.</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#free-evaluation" className="px-8 py-3.5 bg-[#D4AF37] text-[#2C1810] font-bold rounded-xl hover:bg-[#C9A227] transition-colors shadow-lg">
+                <a href="#free-evaluation" className="px-8 py-3.5 bg-[#AC7E71] text-[#5E312B] font-bold rounded-xl hover:bg-[#9A6B5D] transition-colors shadow-lg">
                   Get Free Evaluation
                 </a>
-                <a href="/contact" className="px-8 py-3.5 border-2 border-white/30 text-white font-semibold rounded-xl hover:border-[#D4AF37] hover:text-[#D4AF37] transition-colors">
+                <a href="/contact" className="px-8 py-3.5 border-2 border-white/30 text-white font-semibold rounded-xl hover:border-[#AC7E71] hover:text-[#AC7E71] transition-colors">
                   Talk to an Agent
                 </a>
               </div>

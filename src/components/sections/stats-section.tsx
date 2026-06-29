@@ -19,10 +19,10 @@ const ACHIEVEMENTS = [
 export function StatsSection() {
   return (
     <section
-      className="py-20 bg-[#2C1810] bg-cover bg-center relative overflow-hidden"
+      className="py-20 bg-[#5E312B] bg-cover bg-center relative overflow-hidden"
       style={{ backgroundImage: "url('https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=1600&h=600&fit=crop&q=80')" }}
     >
-      <div className="absolute inset-0 bg-[#2C1810]/90" />
+      <div className="absolute inset-0 bg-[#5E312B]/90" />
       <div className="relative max-w-7xl mx-auto px-4 md:px-6 lg:px-16">
         {/* Stats Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
@@ -35,11 +35,11 @@ export function StatsSection() {
               transition={{ delay: i * 0.1 }}
               className="text-center"
             >
-              <div className="w-16 h-16 bg-[#3D2314] rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-[#7A463E] rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <stat.icon className="w-8 h-8 text-white" />
               </div>
               <p className="text-3xl md:text-4xl font-bold text-white mb-1">{stat.value}</p>
-              <p className="text-[#D4AF37] font-semibold text-sm">{stat.label}</p>
+              <p className="text-[#AC7E71] font-semibold text-sm">{stat.label}</p>
               <p className="text-white/60 text-xs mt-1">{stat.desc}</p>
             </motion.div>
           ))}
@@ -56,7 +56,7 @@ export function StatsSection() {
               transition={{ delay: i * 0.15 }}
               className="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center hover:bg-white/20 transition-colors"
             >
-              <item.icon className="w-10 h-10 text-[#D4AF37] mx-auto mb-3" />
+              <item.icon className="w-10 h-10 text-[#AC7E71] mx-auto mb-3" />
               <h3 className="text-white font-semibold text-lg">{item.title}</h3>
               <p className="text-white/70 text-sm mt-1">{item.desc}</p>
             </motion.div>

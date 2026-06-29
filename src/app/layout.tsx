@@ -3,6 +3,7 @@ import { Inter, Cormorant_Garamond, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { AuthProvider } from "@/context/AuthContext";
 import { CRMProvider } from "@/context/CRMContext";
+import { LanguageProvider } from "@/context/LanguageContext";
 
 /* ─────────────────────────────────────────────────────────────────────────────
    FONTS — BC West Coast aesthetic
@@ -106,7 +107,9 @@ export default function RootLayout({
       >
         <AuthProvider>
           <CRMProvider>
-            {children}
+            <LanguageProvider>
+              {children}
+            </LanguageProvider>
           </CRMProvider>
         </AuthProvider>
       </body>

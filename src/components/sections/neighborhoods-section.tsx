@@ -1,15 +1,18 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { MapPin, ArrowRight, Home, Users } from "lucide-react";
+import { ArrowRight, Home } from "lucide-react";
 import Link from "next/link";
-import { MOCK_NEIGHBORHOODS } from "@/data/mock";
 
 const FEATURED = [
-  { name: "Downtown Vancouver", slug: "downtown-vancouver", properties: 156, avgPrice: "$1.2M", desc: "Urban living at its finest" },
-  { name: "West Vancouver", slug: "west-vancouver", properties: 89, avgPrice: "$2.8M", desc: "Luxury waterfront homes" },
-  { name: "Richmond", slug: "richmond", properties: 203, avgPrice: "$980K", desc: "Family-friendly communities" },
-  { name: "Burnaby", slug: "burnaby", properties: 178, avgPrice: "$1.1M", desc: "Modern amenities & parks" },
+  { name: "Surrey", slug: "surrey", image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&h=400&fit=crop&q=80", properties: 312, avgPrice: "$1.1M", desc: "Fraser Valley's largest city" },
+  { name: "Cloverdale", slug: "cloverdale", image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&h=400&fit=crop&q=80", properties: 87, avgPrice: "$980K", desc: "Historic charm meets modern living" },
+  { name: "Langley", slug: "langley", image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&h=400&fit=crop&q=80", properties: 198, avgPrice: "$1.0M", desc: "Growing community & great value" },
+  { name: "Aldergrove", slug: "aldergrove", image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&h=400&fit=crop&q=80", properties: 54, avgPrice: "$890K", desc: "Peaceful rural neighbourhoods" },
+  { name: "Abbotsford", slug: "abbotsford", image: "https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=600&h=400&fit=crop&q=80", properties: 243, avgPrice: "$920K", desc: "BC's fastest growing city" },
+  { name: "Maple Ridge", slug: "maple-ridge", image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop&q=80", properties: 165, avgPrice: "$1.05M", desc: "Mountain views & family living" },
+  { name: "Delta", slug: "delta", image: "https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=600&h=400&fit=crop&q=80", properties: 142, avgPrice: "$1.2M", desc: "Scenic waterfront community" },
+  { name: "Coquitlam", slug: "coquitlam", image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&h=400&fit=crop&q=80", properties: 189, avgPrice: "$1.15M", desc: "Urban amenities & green spaces" },
 ];
 
 export function NeighborhoodsSection() {
@@ -18,14 +21,14 @@ export function NeighborhoodsSection() {
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-16">
         {/* Header */}
         <div className="text-center mb-12">
-          <p className="text-[#2D4F3C] font-semibold text-sm uppercase tracking-wider mb-2">
+          <p className="text-[#5E312B] font-semibold text-sm uppercase tracking-wider mb-2">
             Explore
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
             Popular Neighborhoods
           </h2>
           <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
-            Discover the best communities in Metro Vancouver, from luxury waterfront to family-friendly suburbs
+            Explore homes across Surrey, Langley, Abbotsford, and the wider Fraser Valley region
           </p>
         </div>
 
@@ -40,15 +43,15 @@ export function NeighborhoodsSection() {
               transition={{ delay: i * 0.1 }}
             >
               <Link href={`/neighbourhoods/${hood.slug}`} className="block group">
-                <div className="relative overflow-hidden rounded-xl aspect-[4/3] bg-gradient-to-br from-[#1a365d] to-[#2D4F3C] mb-4">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <MapPin className="w-12 h-12 text-white/30" />
-                  </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                <div className="relative overflow-hidden rounded-2xl aspect-[4/3] mb-4">
+                  <img
+                    src={hood.image}
+                    alt={hood.name}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
                   <div className="absolute bottom-4 left-4 right-4">
-                    <h3 className="text-white text-lg font-semibold group-hover:text-[#a67c52] transition-colors">
-                      {hood.name}
-                    </h3>
+                    <h3 className="text-white text-lg font-bold">{hood.name}</h3>
                   </div>
                 </div>
                 <div className="space-y-2">
@@ -57,7 +60,7 @@ export function NeighborhoodsSection() {
                     <span className="flex items-center gap-1 text-gray-500">
                       <Home className="w-4 h-4" /> {hood.properties} homes
                     </span>
-                    <span className="text-[#2D4F3C] font-semibold">{hood.avgPrice}</span>
+                    <span className="text-[#5E312B] font-semibold">{hood.avgPrice}</span>
                   </div>
                 </div>
               </Link>
@@ -69,7 +72,7 @@ export function NeighborhoodsSection() {
         <div className="text-center mt-10">
           <Link
             href="/neighbourhoods"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-[#1a365d] text-white rounded-xl font-semibold hover:bg-[#2D4F3C] transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-[#5E312B] text-white rounded-xl font-semibold hover:bg-[#7A463E] transition-colors"
           >
             View All Neighborhoods <ArrowRight className="w-5 h-5" />
           </Link>
